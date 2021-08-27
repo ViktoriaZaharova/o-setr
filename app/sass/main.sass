@@ -1102,6 +1102,189 @@ footer
       &:last-child
         margin: 0
       
+//basket
+.form-basket
+  margin: 28px 0 0
+  h3
+    text-transform: uppercase
+    margin: 0 0 27px
+    font-weight: bold
+    font-size: 24px
+    color: $accent
+
+.subtitle
+  margin: 0 0 14px
+  font-size: 24px
+  color: $accent
+
+.status-field
+  margin: 0 0 22px
+  position: relative
+  padding: 0 95px 0 0
+  &:before
+    content: ''
+    position: absolute
+    right: 45px
+    top: 50%
+    transform: translate(0,-50%)
+    background: url("../img/circle.svg") no-repeat center
+      size: 100%
+    width: 30px
+    height: 30px
+    border-radius: 50%
+
+.status-field-check
+  &:before
+    background: url("../img/check.svg") no-repeat center
+      size: 100%
+
+.form-basket
+  button
+    padding: 0 10px
+    margin: 43px 0 0
+
+.form-basket-box
+  label
+    padding: 0 95px 0 0
+    &:last-child
+      margin: 0
+  input
+    padding: 0 29px
+    background: url("../img/border-input2.svg") no-repeat center
+      size: 100%
+    color: #FFFFFF
+    font-size: 16px
+    &::placeholder
+      color: #FFFFFF
+  textarea
+    background: url("../img/border-textarea.svg") no-repeat center top
+      size: 100%
+    height: 144px
+    padding: 12px 29px
+    color: #FFFFFF
+    font-size: 16px
+    &::placeholder
+      color: #FFFFFF
+
+.basket-total
+  max-width: 462px
+  width: 100%
+  position: relative
+  padding: 30px 30px
+  background: url("../img/border-total.svg") no-repeat center
+    size: 100%
+  font-family: $font
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border: 1px solid #A26E12
+      radius: 5px
+    width: calc(100% - 20px)
+    height: calc(100% - 20px)
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 1px
+    height: 125px
+    background: url("../img/line.svg") no-repeat center
+      size: 100%
+
+
+.basket-total__line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 0 19px
+  font-weight: bold
+
+  &:last-child
+    margin: 0
+  p
+    width: 50%
+
+.basket-total__val
+  width: 50%
+  font-size: 18px
+  font-weight: normal
+  color: $accent
+  padding: 0 0 0 26px
+
+.btn-delete
+  display: flex
+  align-items: center
+  color: #fff
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 14px
+    height: 14px
+    margin: 0 0 0 11px
+  &:hover
+    color: $accent
+
+.table-checkout
+  width: 100%
+  padding: 22px 0 26px
+  display: flex
+  align-items: center
+  border-bottom: 1px solid #A26E12
+  &__title
+    font-size: 24px
+    font-weight: bold
+    color: #fff
+    text-transform: uppercase
+    width: 48%
+    &:hover
+      color: $accent
+  &__sum
+    font-size: 24px
+    font-family: $font
+    color: $accent
+    width: 20%
+    text-align: center
+  &__amount
+    width: 180px
+
+.checkout-wrapper
+  margin: 50px 0 0
+
+.amount
+  display: flex
+  align-items: center
+  justify-content: center
+  input
+    background: url("../img/input-checkout.svg") no-repeat center
+      size: 100%
+    width: 96px
+    height: 38px
+    text-align: center
+    padding: 0
+    font-size: 16px
+    color: #fff
+    font-family: $font
+    margin: 0 10px
+    &::placeholder
+      color: #fff
+  span
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 30px
+    height: 30px
+    min-width: 30px
+    background: linear-gradient(360deg, #E3B65C 0%, #A26E12 100%)
+    cursor: pointer
+
+
 
 @import "media"
 // Всегда в конце

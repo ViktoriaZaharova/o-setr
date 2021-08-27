@@ -38,6 +38,8 @@
   .social p
     margin: 0 20px 0 0
 
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px)
   header
@@ -161,6 +163,18 @@
     .menu-doc
       margin: 10px 0 0
 
+  .form-basket-box
+    input, textarea
+      background: transparent
+      border: 1px solid #A26E12
+        radius: 5px
+
+  .basket-total
+    background: transparent
+    border: 1px solid #A26E12
+      radius: 5px
+    margin: 30px 0 0
+
 @media only screen and (max-width: 920px)
   .menu-doc
     width: 100%
@@ -172,6 +186,17 @@
 
   .footer-box
     margin: 0 auto
+
+  .table-checkout__title
+    font-size: 20px
+
+  .checkout-wrapper
+    margin: 30px 0 0
+
+  .form-basket-box label
+    padding: 0 40px 0 0
+    &:before
+      right: 0
 
 @media only screen and (max-width: 768px)
   h2
@@ -245,6 +270,34 @@
   .product-content__center .box-text p
     margin: 0 0 20px
 
+  .table-checkout__sum
+    font-size: 20px
+
+@media only screen and (max-width: 576px)
+  .table-checkout
+    flex-wrap: wrap
+    .btn-delete
+      order: -1
+
+  .table-checkout__title
+    width: calc(100% - 100px)
+    order: -1
+    margin: 0 auto 0 0
+
+  .table-checkout__amount, .table-checkout__sum
+    width: 50%
+    margin: 10px 0 0
+
+  .table-checkout__sum
+    font-size: 18px
+
+  .form-basket h3
+    font-size: 22px
+    margin: 0 0 20px
+
+  .subtitle
+    font-size: 20px
+
 @media only screen and (max-width: 480px)
   .modal-header p
     font-size: 16px
@@ -314,6 +367,18 @@
 
   .address
     font-size: 16px
+
+  .amount input
+    width: 75px
+    margin: 0 5px
+    border: 1px solid #A26E12
+    background: transparent
+
+  .table-checkout__title
+    font-size: 16px
+
+  .table-checkout
+    padding: 13px 0
 
 @media only screen and (max-width: 360px)
   h2
