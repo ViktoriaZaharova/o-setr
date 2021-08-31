@@ -294,6 +294,47 @@ h2 {
 header {
   padding: 58px 0; }
 
+.basket-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0 0 0 auto;
+  color: #fff;
+  font-family: "Gilroy", sans-serif; }
+  .basket-btn:hover {
+    color: #fff; }
+  .basket-btn__val {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    z-index: 1;
+    background: #C68B43;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700; }
+
 .menu {
   margin: 0 auto 0 212px;
   display: -webkit-box;
@@ -1529,7 +1570,9 @@ footer {
   .mail {
     font-size: 30px; }
   .social p {
-    margin: 0 20px 0 0; } }
+    margin: 0 20px 0 0; }
+  .menu {
+    margin: 0 auto; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
@@ -1721,7 +1764,11 @@ footer {
   .product-content__center .box-text p {
     margin: 0 0 20px; }
   .table-checkout__sum {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .basket-btn {
+    margin: 0 20px 0 0;
+    width: 35px;
+    height: 35px; } }
 
 @media only screen and (max-width: 576px) {
   .table-checkout {
@@ -1838,4 +1885,14 @@ footer {
     padding: 20px 0 0; }
   .catalog-sorting {
     margin: 0 0 20px;
-    font-size: 16px; } }
+    font-size: 16px; }
+  .logo {
+    width: 100px; }
+  .basket-btn {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 0 0; }
+    .basket-btn__val {
+      font-size: 11px;
+      width: 16px;
+      height: 16px; } }
